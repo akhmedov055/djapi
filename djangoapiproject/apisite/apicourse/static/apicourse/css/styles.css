@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 18px;
+}
+
+.container {
+    display: inline-block;
+    background-color: #7d91ff;
+    padding: 30px;
+    margin: 20px;
+    width: 300px;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    padding-top: 15px;
+}

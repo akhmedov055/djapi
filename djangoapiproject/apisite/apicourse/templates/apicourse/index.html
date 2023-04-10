@@ -1,0 +1,25 @@
+{% extends 'apicourse/base.html' %}
+
+{% block content %}
+
+<div class="main">
+    <div class="undmain">
+        {% if not courses %}
+            <h2>Данных нет</h2>
+            <h2>Добавить <a href="/api/course/">по ссылке</a></h2>
+        {% else %}
+        <ul>
+            {% for с in courses %}
+            <div class="container">
+                <li>
+                    <p>{{ с.name }}</p>
+                    <p>{{ с.time_start }}</p>
+                    <p>{{ с.time_finish }}</p>
+                    <p>{{ с.description }}</p>
+                </li>
+            </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
